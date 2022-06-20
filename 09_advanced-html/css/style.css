@@ -583,8 +583,11 @@ body {
   line-height: 16px;
   color: #000000;
   border: 0px;
-  border-bottom: 2px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
 
+.want-tour-form-number.date{
+  border-bottom: none;
 }
 
 .want-tour-btn {
@@ -656,9 +659,12 @@ body {
   line-height: 150%;
 }
 
-.contacts-right-photo {
+.contacts-right {
   min-width: 653px;
   min-height: 528px;
+  background-image: url(../img/contacts-foto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts-btn {
@@ -738,7 +744,7 @@ body {
   font-style: normal;
 }
 
-.footer-right {
+.footer-right-list {
   flex-direction: column;
 }
 
