@@ -1,3 +1,5 @@
+/* Слайдер в hero-блоке */
+
 const container = document.querySelector(".container")
 const swiper = new Swiper('.hero__swiper', {
   speed: 300,
@@ -8,6 +10,8 @@ const swiper = new Swiper('.hero__swiper', {
   }
 })
 
+
+/* Табы в секции “Как мы работаем” */
 
 let tabsButton = document.querySelectorAll('.work__btn');
 let tabsItem = document.querySelectorAll('.work__block');
@@ -25,11 +29,17 @@ tabsButton.forEach(function (elBtn) {
 });
 
 
+
+/* Аккордеон в секции “часто задаваемые вопросы” */
+
 $('.accordion').accordion();
 $(".accordion").accordion({
   collapsible: true
 });
 
+
+
+/* Открытие и закрытие бургер меню */
 
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.header__nav');
@@ -54,6 +64,9 @@ menuLinks.forEach(function (el) {
 
 })
 
+
+
+/* Открытие и закрытие поля поиска */
 
 const searchBtn = document.querySelector(".search__btn");
 const cancelBtn = document.querySelector(".cancel__btn");
