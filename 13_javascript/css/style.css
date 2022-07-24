@@ -213,6 +213,7 @@ body {
   align-items: center;
   border-radius: 24px;
   padding: 16px 32px;
+  background: #FFFFFF;
   width: 24px;
   height: 60px;
   transition: width 1.0s ease-in-out;
@@ -220,6 +221,7 @@ body {
 
 .search__box.active {
   width: 539px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
 }
 
 .search__box input {
