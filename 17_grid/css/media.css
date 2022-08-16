@@ -55,8 +55,8 @@
     padding-bottom: 52px;
   }
 
-  .courses_wrap {
-    min-height: 376px;
+  .courses_item{
+    min-height: 556px;
   }
 
 
@@ -120,8 +120,8 @@
     padding-bottom: 49px;
   }
 
-  .courses_wrap {
-    min-height: 473px;
+  .courses_item{
+    min-height: 653px;
   }
 
   .courses_wrap .courses_title {
@@ -292,4 +292,11 @@
 
 
 
+}
+
+@media (max-width:320px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }

@@ -60,12 +60,29 @@ p {
   line-height: 19px;
   font-weight: 700;
   outline: none;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn:focus {
+  outline: 3px solid blue;
+  outline-offset: -1px;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: black;
+}
+
+.btn:active {
+  outline: none;
+  background-color: rgba(16, 28, 143, 0.89);
+  color: black;
 }
 
 .container {
-  max-width: 1920px;
-  padding-left: 165px;
-  padding-right: 175px;
+  max-width: 1500px;
+  padding-left: 195px;
+  padding-right: 198px;
   margin: 0 auto;
 }
 
@@ -97,8 +114,45 @@ p {
   justify-content: space-between;
 }
 
-.header_nav .right_item {
-  cursor: pointer;
+.logo_link path {
+  fill: white;
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo_link:focus {
+  outline: 2px solid #2E2B44;
+  outline-offset: 7px;
+}
+
+.logo_link:hover path {
+  fill: #36363a;
+}
+
+.logo_link:active path {
+  fill: #060607;
+}
+
+.logo_link:active {
+  outline: none;
+}
+
+.right_link {
+  transition: color 0.3s ease-in-out;
+}
+
+.right_link:focus {
+  outline: 2px solid #2E2B44;
+  outline-offset: 7px;
+}
+
+.right_link:hover {
+  color: #36363a;
+  outline: none;
+}
+
+.right_link:active {
+  color: #060607;
+  outline: none;
 }
 
 .header_nav .right_item:not(:last-child) {
@@ -156,7 +210,7 @@ p {
   padding-bottom: 10px;
 }
 
-.hero_right img{
+.hero_right img {
   height: 100%;
   object-fit: contain;
   font-size: 0;
@@ -325,6 +379,9 @@ p {
 .courses_item {
   display: flex;
   flex-direction: column;
+  min-height: 480px;
+  background-color: #EDF0F9;
+  border-radius: 20px;
   margin-bottom: 30px;
 }
 
@@ -336,7 +393,6 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  border-radius: 15px 15px 0px 0px;
 }
 
 .courses_img_1 {
@@ -384,10 +440,14 @@ p {
   flex-direction: column;
   max-width: 539px;
   width: 100%;
-  min-height: 300px;
   padding: 30px;
-  background-color: #EDF0F9;
-  border-radius: 0px 0px 15px 15px;
+  padding-bottom: 0;
+}
+
+.btn_wrap {
+  margin-top: auto;
+  padding: 30px;
+  padding-top: 0;
 }
 
 .courses_wrap .courses_title {
@@ -404,7 +464,6 @@ p {
 }
 
 .courses_btn {
-  margin-top: auto;
   align-self: start;
 }
 
@@ -415,14 +474,14 @@ p {
   width: 100%;
 }
 
-.footer_social {
-  text-align: center;
+.social_list {
+  justify-content: center;
   padding-top: 26px;
   padding-bottom: 24px;
 }
 
-.footer_social svg:not(:last-child) {
-  margin-right: 25px;
+.social_list .social_item:not(:last-child) {
+  margin-right: 31px;
 }
 
 .footer_bottom {
@@ -436,4 +495,30 @@ p {
 .footer_descr {
   font-size: 13px;
   line-height: 15px;
+}
+
+.social_item path {
+  fill: white;
+  transition: fill 0.3s ease-in-out;
+}
+
+.social_item a {
+  outline: none;
+}
+
+.social_item a:focus svg {
+  outline: 2px solid black;
+  outline-offset: 3px;
+}
+
+.social_item a:hover path {
+  fill: blue;
+}
+
+.social_item a:active path {
+  fill: #3F2AFF;
+}
+
+.social_item a:active svg {
+  outline: none;
 }
