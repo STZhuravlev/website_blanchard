@@ -1,0 +1,302 @@
+@media (max-width: 1023px) {
+  .container {
+    padding-left: 37px;
+    padding-right: 40px;
+  }
+
+  .header {
+    padding-top: 29px;
+  }
+
+  .hero_left {
+    max-width: 385px;
+  }
+
+  .hero_title {
+    font-size: 48px;
+    margin-bottom: 17px;
+  }
+
+  .hero_right {
+    padding-top: 120px;
+    padding-bottom: 152px;
+  }
+
+  .about_wrap {
+    padding-top: 84px;
+    padding-left: 241px;
+  }
+
+  .about_content {
+    width: 211px;
+    height: 187px;
+    background-size: cover;
+    top: 33%;
+  }
+
+  .about_item {
+    padding-left: 0;
+    padding-top: 66px;
+  }
+
+  .about_list {
+    padding-top: 16px;
+  }
+
+  .teachers_img {
+    margin-bottom: 32px;
+  }
+
+  .teachers_item {
+    margin-bottom: 22px;
+  }
+
+  .teachers {
+    padding-bottom: 52px;
+  }
+
+  .courses_item{
+    min-height: 556px;
+  }
+
+
+}
+
+@media (max-width: 720px) {
+
+  .header {
+    padding-bottom: 28px;
+  }
+
+  .header_nav {
+    flex-direction: column;
+  }
+
+  .nav_left {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .nav_right {
+    padding-left: 15px;
+  }
+
+  .hero {
+    padding-top: 10px;
+  }
+
+  .hero_right {
+    padding: 0;
+    display: none;
+  }
+
+  .hero_left {
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 135px;
+  }
+
+  .about {
+    padding-bottom: 58px;
+  }
+
+  .about_content {
+    width: 150px;
+    height: 134px;
+    top: 19%;
+  }
+
+  .about_wrap {
+    padding-top: 81px;
+    padding-left: 180px;
+    margin-bottom: 39px;
+  }
+
+  .about_item {
+    padding-top: 57px;
+  }
+
+  .teachers {
+    padding-bottom: 49px;
+  }
+
+  .courses_item{
+    min-height: 653px;
+  }
+
+  .courses_wrap .courses_title {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .courses_title {
+    margin-bottom: 22px;
+  }
+
+  .courses_btn {
+    padding: 21px 48px;
+  }
+
+  .img_wrap {
+    right: 6%;
+  }
+
+}
+
+@media (max-width:574px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 60px;
+  }
+
+  .header {
+    padding-bottom: 2px;
+  }
+
+  .nav_right {
+    display: none;
+  }
+
+  .header_nav {
+    flex-direction: row;
+  }
+
+  .nav_left svg {
+    width: 72px;
+    height: 16px;
+  }
+
+  .hero_left {
+    padding-top: 40px;
+    padding-bottom: 51px;
+  }
+
+  .hero_title {
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 6px;
+  }
+
+  .hero_descr {
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 44px;
+  }
+
+  .btn_hero {
+    padding: 20px 53px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .about {
+    padding-bottom: 52px;
+  }
+
+  .about_title {
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .about_wrap {
+    padding-left: 0px;
+    padding-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .about_content {
+    display: none;
+  }
+
+  .about_item:not(:last-child) {
+    margin-bottom: 34px;
+  }
+
+  .about_title {
+    margin-bottom: 2px;
+  }
+
+  .about_item {
+    padding-top: 0;
+    padding-left: 110px;
+  }
+
+  .about_item::before {
+    top: -3%;
+  }
+
+  .about_list {
+    padding-top: 0px;
+  }
+
+  .burger {
+    z-index: 1000;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 17px;
+    color: #FFFFFF;
+  }
+
+  .burger__line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: inherit;
+    background-color: currentColor;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .burger__line:nth-child(1) {
+    top: 17px;
+  }
+
+  .burger__line:nth-child(3) {
+    bottom: 13px;
+  }
+
+  .burger__line:nth-child(2) {
+    top: 69%;
+    transform: translateX(-50%) translateY(-3px);
+  }
+
+  .teachers_title {
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .teachers {
+    padding-top: 48px;
+  }
+
+  .courses_title {
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 26px;
+  }
+
+  .courses {
+    padding-top: 47px;
+    padding-bottom: 20px;
+  }
+
+  .courses_wrap .courses_title {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .courses_btn {
+    padding: 21px 55px;
+  }
+
+
+
+}
+
+@media (max-width:360px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
