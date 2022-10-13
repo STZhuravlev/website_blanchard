@@ -38,6 +38,7 @@ new JustValidate('.form', {
   rules: {
     name: {
       required: true,
+      value: /^[а-яА-ЯёЁa-zA-Z]+$/,
       minLength: 2,
       maxLength: 15
     },
@@ -58,7 +59,7 @@ new JustValidate('.form', {
   colorWrong: '#FF5C00',
   messages: {
     name: {
-      required: "Вы не ввели имя",
+
       minLength: "Имя не может быть короче 2 символов",
       maxLength: "Имя не божет быть длиннее 15 символов"
     },

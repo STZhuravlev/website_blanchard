@@ -1,0 +1,46 @@
+/* Адаптивная высота слайда регулируется относительно его ширины с помощью padding-top в % для псевдоэлемента ::before */
+
+@media (max-width: 1024px) {
+  .test-slide::before {
+    padding-top: calc(85% - 6px);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .block_left,
+  .gallery_swiper {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .block_left {
+    margin-bottom: 50px;
+  }
+
+  .test-select {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 440px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .gallery_swiper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .swiper_navigation {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .test-slide::before {
+    padding-top: calc(110% - 6px);
+  }
+}
