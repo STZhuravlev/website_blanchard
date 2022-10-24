@@ -88,12 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     spaceBetween: 20,
     pagination: {
-      el: ".gallery .swiper_pagination",
+      el: ".gallery .gallery__pagination",
       type: "fraction"
     },
     navigation: {
-      nextEl: ".gallery .btn_next",
-      prevEl: ".gallery .btn_prev"
+      nextEl: ".gallery .btn-next",
+      prevEl: ".gallery .btn-prev"
     },
 
 
@@ -104,16 +104,16 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 30
       },
 
-      441: {
+      660: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 30
+        spaceBetween: 38
       },
 
-      1200: {
+      1180: {
         slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 50
+        spaceBetween: 35
       }
     },
 
@@ -209,9 +209,48 @@ const developments_swiper = new Swiper('.developments__swiper', {
   slidesPerView: 3,
   spaceBetween: 50,
   navigation: {
-    nextEl: ".developments .btn_next",
-    prevEl: ".developments .btn_prev"
+    nextEl: ".developments .btn-next",
+    prevEl: ".developments .btn-prev"
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.developments__pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    },
+
+    660: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+      pagination: {
+        el: '.developments__pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    },
+
+    800: {
+      slidesPerView: 3,
+      slidesPerGroup: 2,
+      spaceBetween: 28,
+      pagination: {
+        el: '.developments__pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    },
+
+    1180: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
 })
 
 /* Tooltip */
@@ -221,7 +260,7 @@ tippy('.js-tooltip-btn', {
   maxWidth: 270,
 });
 
-/* Слайдер в developments-блоке */
+/* Слайдер в projects-блоке */
 
 const projects_container = document.querySelector(".container")
 const projects_swiper = new Swiper('.projects__swiper', {
@@ -229,9 +268,26 @@ const projects_swiper = new Swiper('.projects__swiper', {
   slidesPerView: 3,
   spaceBetween: 50,
   navigation: {
-    nextEl: ".projects .btn_next",
-    prevEl: ".projects .btn_prev"
+    nextEl: ".projects .btn-next",
+    prevEl: ".projects .btn-prev"
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 34
+    },
+
+    1180: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
 })
 
 
@@ -293,7 +349,7 @@ function init() {
       zoomControlSize: "small",
       zoomControlFloat: "none",
       zoomControlPosition: { top: "120px", right: "20px" }
-    }
+    },
   );
 
   myMap.behaviors.disable('scrollZoom');
@@ -301,9 +357,9 @@ function init() {
   var myPlacemark = new ymaps.Placemark([55.75846806898367, 37.60108849999989], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'img/Yandex_icon.svg',
-    iconImageSize: [28, 40],
-    iconImageOffset: [0, -50]
-  });
+    iconImageSize: [20, 20],
+    iconImageOffset: [0, -50],
+  })
   myMap.geoObjects.add(myPlacemark);
 }
 
@@ -344,6 +400,46 @@ overlay.addEventListener('click', function () {
 });
 
 
+/* Открытие и закрытие поиска */
 
+const searchBtn = document.querySelector(".top__search");
+const cancelBtn = document.querySelector(".search__cancel");
+const searchBox = document.querySelector(".top__search-box");
+
+searchBtn.onclick = () => {
+  searchBox.classList.add("active");
+  searchBtn.classList.add("active");
+}
+
+cancelBtn.onclick = () => {
+  searchBox.classList.remove("active");
+  searchBtn.classList.remove("active");
+}
+
+
+/* Бургер меню */
+
+let burger = document.querySelector('.burger');
+let menu = document.querySelector('.top__blog');
+let menuLinks = menu.querySelectorAll('.nav__link');
+
+
+burger.addEventListener('click',
+  function () {
+    burger.classList.toggle('burger--active');
+    menu.classList.toggle('top__blog--active');
+    document.body.classList.toggle('stop-scroll');
+  })
+
+menuLinks.forEach(function (el) {
+  el.addEventListener('click', function () {
+    burger.classList.remove('burger--active')
+
+    menu.classList.remove('top__blog--active')
+
+    document.body.classList.remove('stop-scroll')
+  })
+
+})
 
 

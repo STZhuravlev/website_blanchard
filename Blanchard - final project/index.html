@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="plugin/css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -21,8 +21,7 @@
   <script defer src="https://unpkg.com/tippy.js@6"></script>
   <script defer src="plugin/js/inputmask.min.js"></script>
   <script defer src="plugin/js/just-validate.min.js"></script>
-  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script defer src="js/script.js"></script>
 </head>
 
@@ -30,61 +29,94 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header_wrap">
-        <div class="header__top flex">
+      <div class="header__wrap">
+        <h1>Художественная галерея</h1>
+        <div class="header__top top flex">
           <button aria-label="Меню" class="btn-reset burger">
             <span class="burger__line"></span>
             <span class="burger__line"></span>
             <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
           </button>
-          <a href="#" class="header__logo">
-            <img src="img/Logo.png" alt="Лого">
-          </a>
-          <nav class="nav header__nav" title="Главное меню">
-            <ul class="list-reset nav__list flex">
-              <li class="nav__item">
-                <a href="#about_us" class="nav__link">
-                  О&nbsp;нас
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#gallery" class="nav__link">
-                  Галерея
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#catalog" class="nav__link">
-                  Каталог
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#developments" class="nav__link">
-                  События
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#projects" class="nav__link">
-                  Проекты
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#contacts" class="nav__link">
-                  Контакты
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <a href="#" class="header__enter flex">
-            <span class="header__enter-wrap">
-              <svg class="link__arrow" width="18" height="13" viewBox="0 0 18 13" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z"
-                  fill="#C283F3" />
+          <img class="header__logo" src="img/Logo.png" alt="Лого">
+          <div class="top__blog flex">
+            <nav class="nav header__nav" title="Главное меню">
+              <ul class="list-reset nav__list flex">
+                <li class="nav__item">
+                  <a href="#about_us" class="nav__link">
+                    О&nbsp;нас
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#gallery" class="nav__link">
+                    Галерея
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#catalog" class="nav__link">
+                    Каталог
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#developments" class="nav__link">
+                    События
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#projects" class="nav__link">
+                    Проекты
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="header__enter flex">
+              <span class="header__enter-wrap">
+                <svg class="link-arrow" width="18" height="13" viewBox="0 0 18 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z"
+                    fill="#C283F3" />
+                </svg>
+              </span>
+              <span>Войти</span>
+            </a>
+          </div>
+          <button aria-label="Поиск" class="top__search btn-reset">
+            <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="9.15446" height="2.28862"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                fill="white" />
+            </svg>
+          </button>
+          <div class="top__search-box search">
+            <button aria-label="Поиск" class="search__btn btn-reset">
+              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="9.15446" height="2.28862"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+                  fill="white" />
               </svg>
-            </span>
-            <span>Войти</span>
-          </a>
+            </button>
+            <input class="search__input" type="text">
+            <button aria-label="Закрыть поиск" class="search__cancel btn-reset">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)"
+                  fill="white" />
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)"
+                  fill="white" />
+              </svg>
+            </button>
+          </div>
+
         </div>
 
 
@@ -206,8 +238,8 @@
               </div>
             </li>
           </ul>
-          <div class="search__box flex">
-            <button aria-label="Поиск" class="search__btn btn-reset">
+          <div class="header__search flex">
+            <button aria-label="Поиск" class="search-btn btn-reset">
               <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695"
                   transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
@@ -235,26 +267,24 @@
               <div class="swiper-slide hero__slide hero__slide3"></div>
             </div>
           </div>
-          <h1 class="hero__title">
+          <h2 class="hero__title">
             Прикоснитесь к&nbsp;прекрасному
-          </h1>
+          </h2>
           <p class="hero__descr">
             Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
             для новых предложений
           </p>
           <button aria-label="Подписаться на рассылку" class="btn btn-reset hero__btn">
-            <a href="#">
-              Подписаться на&nbsp;рассылку
-            </a>
+            Подписаться на&nbsp;рассылку
           </button>
         </div>
       </div>
     </section>
-    <section class="about_us" id="about_us">
+    <section class="about" id="about_us">
       <div class="container">
-        <div class="about_us_wrap">
+        <div class="about__wrap">
           <h2 class="title">О&nbsp;нас</h2>
-          <p class="hero_descr">
+          <p class="about__descr">
             Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
             участника как способного принимать собственные решения касаемо распределения внутренних резервов
             и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
@@ -270,16 +300,16 @@
 
     <section class="gallery" id="gallery">
       <div class="container">
-        <div class="gallery_wrap">
-          <div class="block_left">
+        <div class="gallery__wrap block">
+          <div class="block__left">
             <h2 class="title">Галерея</h2>
-            <p class="left_title">Фильтр:</p>
+            <p class="block__title">Фильтр:</p>
             <select name="select">
               <option>Живопись</option>
               <option>Рисунок</option>
               <option>Скульптура</option>
             </select>
-            <div class="checkbox__container">
+            <div class="checkbox-container">
               <label class="check-label">
                 <input class="visually-hidden checkbox" type="checkbox">
                 <span class="visible-checkbox"></span>
@@ -297,19 +327,19 @@
               </label>
             </div>
           </div>
-          <div class="gallery_swiper">
-            <div class="swiper_navigation">
-              <button class="nav-btn btn_prev" aria-label="К предыдущему слайду"></button>
-              <div class="swiper_pagination"></div>
-              <button class="nav-btn btn_next" aria-label="К следующему слайду"></button>
+          <div class="gallery__swiper">
+            <div class="gallery__navigation">
+              <button class="nav-btn btn-prev" aria-label="К предыдущему слайду"></button>
+              <div class="gallery__pagination"></div>
+              <button class="nav-btn btn-next" aria-label="К следующему слайду"></button>
             </div>
-            <div class="swiper_container slides-container">
+            <div class="swiper-container slides-container">
               <div class="swiper-wrapper">
                 <a class="swiper-slide test-slide js-open-modal" data-modal="1" href="#">
                   <picture>
                     <source srcset="img/gallery/main/gallery_1.jpg" media="(max-width: 360px)">
-                    <source srcset="img/gallery/768/gallery_1.jpg" media="(max-width: 768px)">
-                    <source srcset="img/gallery/1024/gallery_1.jpg" media="(max-width: 1024px)">
+                    <source srcset="img/gallery/768/gallery_1.jpg" media="(max-width: 820px)">
+                    <source srcset="img/gallery/1024/gallery_1.jpg" media="(max-width: 1080px)">
 
                     <img class="test-image" src="img/gallery/main/gallery_1.jpg" alt="Картина">
                   </picture>
@@ -317,7 +347,7 @@
                 <a class="swiper-slide test-slide js-open-modal" data-modal="2" href="#">
                   <picture>
                     <source srcset="img/gallery/320/gallery_2.jpg" media="(max-width: 360px)">
-                    <source srcset="img/gallery/768/gallery_2.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/768/gallery_2.jpg" media="(max-width: 820px)">
                     <source srcset="img/gallery/1024/gallery_2.jpg" media="(max-width: 1024px)">
 
                     <img class="test-image" src="img/gallery/main/gallery_2.jpg" alt="Картина">
@@ -326,7 +356,7 @@
                 <a class="swiper-slide test-slide js-open-modal" data-modal="3" href="#">
                   <picture>
                     <source srcset="img/gallery/320/gallery_3.jpg" media="(max-width: 360px)">
-                    <source srcset="img/gallery/768/gallery_3.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/768/gallery_3.jpg" media="(max-width: 820px)">
                     <source srcset="img/gallery/1024/gallery_3.jpg" media="(max-width: 1024px)">
 
                     <img class="test-image" src="img/gallery/main/gallery_3.jpg" alt="Картина">
@@ -335,7 +365,7 @@
                 <a class="swiper-slide test-slide js-open-modal" data-modal="4" href="#">
                   <picture>
                     <source srcset="img/gallery/320/gallery_4.jpg" media="(max-width: 360px)">
-                    <source srcset="img/gallery/768/gallery_4.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/768/gallery_4.jpg" media="(max-width: 820px)">
                     <source srcset="img/gallery/1024/gallery_4.jpg" media="(max-width: 1024px)">
 
                     <img class="test-image" src="img/gallery/main/gallery_4.jpg" alt="Картина">
@@ -344,7 +374,7 @@
                 <a class="swiper-slide test-slide js-open-modal" data-modal="5" href="#">
                   <picture>
                     <source srcset="img/gallery/320/gallery_5.jpg" media="(max-width: 360px)">
-                    <source srcset="img/gallery/768/gallery_5.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/768/gallery_5.jpg" media="(max-width: 820px)">
                     <source srcset="img/gallery/1024/gallery_5.jpg" media="(max-width: 1024px)">
 
                     <img class="test-image" src="img/gallery/main/gallery_5.jpg" alt="Картина">
@@ -353,7 +383,7 @@
                 <a class="swiper-slide test-slide js-open-modal" data-modal="6" href="#">
                   <picture>
                     <source srcset="img/gallery/320/gallery_6.jpg" media="(max-width: 360px)">
-                    <source srcset="img/gallery/768/gallery_6.jpg" media="(max-width: 768px)">
+                    <source srcset="img/gallery/768/gallery_6.jpg" media="(max-width: 820px)">
                     <source srcset="img/gallery/1024/gallery_6.jpg" media="(max-width: 1024px)">
 
                     <img class="test-image" src="img/gallery/main/gallery_6.jpg" alt="Картина">
@@ -364,16 +394,24 @@
           </div>
           <div class="modal" data-modal="1">
             <span class="modal__cross js-modal-close">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.66924 15.3042L15.3353 -9.20431e-05L16.002 0.695557L1.33588 15.9998L0.66924 15.3042Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.666583 7.79372e-05L15.3327 15.3044L14.666 16L-5.65952e-05 0.695727L0.666583 7.79372e-05Z"
+                  fill="black" />
+              </svg>
             </span>
             <div class="flex">
               <div class="modal__left">
                 <img class="modal__img" src="img/gallery/main/gallery_1.jpg" alt="">
               </div>
               <div class="modal__right">
-                <p class="modal_author">Казимир Малевич</p>
-                <p class="modal_painting">«Женский торс 2»</p>
-                <p class="modal_date">1931–1932</p>
-                <p class="modal_descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+                <p class="modal__author">Казимир Малевич</p>
+                <p class="modal__painting">«Женский торс 2»</p>
+                <p class="modal__date">1931–1932</p>
+                <p class="modal__descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
                   принялся
                   за её создание
                   в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
@@ -384,16 +422,24 @@
           </div>
           <div class="modal" data-modal="2">
             <span class="modal__cross js-modal-close">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.66924 15.3042L15.3353 -9.20431e-05L16.002 0.695557L1.33588 15.9998L0.66924 15.3042Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.666583 7.79372e-05L15.3327 15.3044L14.666 16L-5.65952e-05 0.695727L0.666583 7.79372e-05Z"
+                  fill="black" />
+              </svg>
             </span>
             <div class="flex">
               <div class="modal__left">
                 <img class="modal__img" src="img/gallery/main/modal_2.jpg" alt="">
               </div>
               <div class="modal__right">
-                <p class="modal_author">Казимир Малевич</p>
-                <p class="modal_painting">«Женщина с граблями»</p>
-                <p class="modal_date">1931–1932</p>
-                <p class="modal_descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+                <p class="modal__author">Казимир Малевич</p>
+                <p class="modal__painting">«Женщина с граблями»</p>
+                <p class="modal__date">1931–1932</p>
+                <p class="modal__descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
                   принялся
                   за её создание
                   в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
@@ -404,16 +450,24 @@
           </div>
           <div class="modal" data-modal="3">
             <span class="modal__cross js-modal-close">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.66924 15.3042L15.3353 -9.20431e-05L16.002 0.695557L1.33588 15.9998L0.66924 15.3042Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.666583 7.79372e-05L15.3327 15.3044L14.666 16L-5.65952e-05 0.695727L0.666583 7.79372e-05Z"
+                  fill="black" />
+              </svg>
             </span>
             <div class="flex">
               <div class="modal__left">
                 <img class="modal__img" src="img/gallery/main/gallery_3.jpg" alt="">
               </div>
               <div class="modal__right">
-                <p class="modal_author">Казимир Малевич</p>
-                <p class="modal_painting">«Женщина с граблями»</p>
-                <p class="modal_date">1931–1932</p>
-                <p class="modal_descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+                <p class="modal__author">Казимир Малевич</p>
+                <p class="modal__painting">«Женщина с граблями»</p>
+                <p class="modal__date">1931–1932</p>
+                <p class="modal__descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
                   принялся
                   за её создание
                   в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
@@ -424,16 +478,24 @@
           </div>
           <div class="modal" data-modal="4">
             <span class="modal__cross js-modal-close">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.66924 15.3042L15.3353 -9.20431e-05L16.002 0.695557L1.33588 15.9998L0.66924 15.3042Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.666583 7.79372e-05L15.3327 15.3044L14.666 16L-5.65952e-05 0.695727L0.666583 7.79372e-05Z"
+                  fill="black" />
+              </svg>
             </span>
             <div class="flex">
               <div class="modal__left">
                 <img class="modal__img" src="img/gallery/main/gallery_4.jpg" alt="">
               </div>
               <div class="modal__right">
-                <p class="modal_author">Казимир Малевич</p>
-                <p class="modal_painting">«Женщина с граблями»</p>
-                <p class="modal_date">1931–1932</p>
-                <p class="modal_descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+                <p class="modal__author">Казимир Малевич</p>
+                <p class="modal__painting">«Женщина с граблями»</p>
+                <p class="modal__date">1931–1932</p>
+                <p class="modal__descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
                   принялся
                   за её создание
                   в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
@@ -444,16 +506,24 @@
           </div>
           <div class="modal" data-modal="5">
             <span class="modal__cross js-modal-close">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.66924 15.3042L15.3353 -9.20431e-05L16.002 0.695557L1.33588 15.9998L0.66924 15.3042Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.666583 7.79372e-05L15.3327 15.3044L14.666 16L-5.65952e-05 0.695727L0.666583 7.79372e-05Z"
+                  fill="black" />
+              </svg>
             </span>
             <div class="flex">
               <div class="modal__left">
                 <img class="modal__img" src="img/gallery/main/gallery_5.jpg" alt="">
               </div>
               <div class="modal__right">
-                <p class="modal_author">Казимир Малевич</p>
-                <p class="modal_painting">«Женщина с граблями»</p>
-                <p class="modal_date">1931–1932</p>
-                <p class="modal_descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+                <p class="modal__author">Казимир Малевич</p>
+                <p class="modal__painting">«Женщина с граблями»</p>
+                <p class="modal__date">1931–1932</p>
+                <p class="modal__descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
                   принялся
                   за её создание
                   в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
@@ -464,16 +534,24 @@
           </div>
           <div class="modal" data-modal="6">
             <span class="modal__cross js-modal-close">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.66924 15.3042L15.3353 -9.20431e-05L16.002 0.695557L1.33588 15.9998L0.66924 15.3042Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.666583 7.79372e-05L15.3327 15.3044L14.666 16L-5.65952e-05 0.695727L0.666583 7.79372e-05Z"
+                  fill="black" />
+              </svg>
             </span>
             <div class="flex">
               <div class="modal__left">
                 <img class="modal__img" src="img/gallery/main/gallery_6.jpg" alt="">
               </div>
               <div class="modal__right">
-                <p class="modal_author">Казимир Малевич</p>
-                <p class="modal_painting">«Женщина с граблями»</p>
-                <p class="modal_date">1931–1932</p>
-                <p class="modal_descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+                <p class="modal__author">Казимир Малевич</p>
+                <p class="modal__painting">«Женщина с граблями»</p>
+                <p class="modal__date">1931–1932</p>
+                <p class="modal__descr">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
                   принялся
                   за её создание
                   в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
@@ -506,13 +584,12 @@
             <div class="catalog__content-wrap">
               <div class="catalog__painter-info active js-tab-content" data-target="domenico">
                 <picture class="catalog__picture">
-                  <source srcset="https://images.freeimages.com/images/large-previews/a31/colorful-umbrella-1176220.jpg"
-                    media="(max-width: 580px)">
-                  <img class="" src="img/catalog/accordion_Ghirlandaio.jpg" alt="">
+                  <source srcset="img/catalog/320px.jpg" media="(max-width: 360px)">
+                  <img class="" src="img/catalog/accordion_Ghirlandaio.jpg" alt="Фото художника">
                 </picture>
                 <h3 class="catalog__title">Доменико Гирландайо</h3>
                 <p class="catalog__date">2 июня 1448–11 января 1494</p>
-                <p class="catalog__descr">Один из ведущих флорентийских художников Кватроченто, основатель
+                <p class="catalog__descr-acr">Один из ведущих флорентийских художников Кватроченто, основатель
                   художественной династии, которую
                   продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
                   в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло,
@@ -521,9 +598,8 @@
               </div>
               <div class="catalog__painter-info js-tab-content" data-target="empty">
                 <picture class="catalog__picture">
-                  <source srcset="https://images.freeimages.com/images/large-previews/a31/colorful-umbrella-1176220.jpg"
-                    media="(max-width: 580px)">
-                  <img class="" src="img/catalog/draft_painter.jpg" alt="">
+                  <source srcset="img/catalog/draft_painter.jpg" media="(max-width: 360px)">
+                  <img class="" src="img/catalog/draft_painter.jpg" alt="Фото художника">
                 </picture>
                 <h3>Что мы о нём знаем?</h3>
                 <p>Пока ничего… Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
@@ -692,7 +768,7 @@
                           <span class="link__text">Пинтуриккьо</span>
                         </a>
                       </li>
-                      <li class="accordion__item">
+                      <li class="accordion__item accordion__item-none">
                         <a class="accordion__painter-link link link--text link--text-another js-tab-btn"
                           data-path="empty" href="#">
                           <span class="link__text">Пинтуриккьо</span>
@@ -886,58 +962,98 @@
       <div class="container">
         <div class="developments__wrap">
           <h2 class="title">События</h2>
-          <button class="nav-btn btn_prev" aria-label="К предыдущему слайду"></button>
-          <button class="nav-btn btn_next" aria-label="К следующему слайду"></button>
+          <button class="nav-btn btn-prev" aria-label="К предыдущему слайду"></button>
+          <button class="nav-btn btn-next" aria-label="К следующему слайду"></button>
           <div class="swiper developments__swiper">
 
             <div class="swiper-wrapper">
 
-              <div class="swiper-slide developments__wrapper">
-                <div class="developments__slide developments__slide1"></div>
+              <div class="swiper-slide developments__wrapper block">
+                <div class="developments__slide">
+                  <picture>
+                    <source srcset="img/developments/320/developments_1.jpg" media="(max-width: 360px)">
+                    <source srcset="img/developments/768/developments_1.jpg" media="(max-width: 820px)">
+                    <source srcset="img/developments/1024/developments_1.jpg" media="(max-width: 1080px)">
+
+                    <img class="developments__img" src="img/developments/main/developments_1.jpg" alt="фото">
+                  </picture>
+                </div>
                 <p class="block__date">Музей им. Щусева <br>
                   с 20 марта по 30 апреля</p>
-                <p class="block__title">Книжная гравюра в живом восприятии</p>
+                <p class="block__title">Книжная гравюра в живом восприятии</p>
                 <p class="block__descr">Один из ведущих флорентийских художников Кватроченто, основатель
                   художественной династии, которую
-                  продолжили его брат Давид и сын Ридольфо</p>
+                  продолжили его брат Давид и сын Ридольфо
+                </p>
                 <a href="" class="block__link">Подробнее</a>
               </div>
 
-              <div class="swiper-slide developments__wrapper">
-                <div class="developments__slide developments__slide2"></div>
+              <div class="swiper-slide developments__wrapper block">
+                <div class="developments__slide">
+                  <div class="developments__slide">
+                    <picture>
+                      <source srcset="img/developments/320/developments_2.jpg" media="(max-width: 360px)">
+                      <source srcset="img/developments/768/developments_2.jpg" media="(max-width: 820px)">
+                      <source srcset="img/developments/1024/developments_2.jpg" media="(max-width: 1080px)">
+
+                      <img class="developments__img" src="img/developments/main/developments_2.jpg" alt="фото">
+                    </picture>
+                  </div>
+                </div>
                 <p class="block__date">ММОМА<br>
                   24 марта 19:00</p>
                 <p class="block__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</p>
                 <p class="block__descr">Высокий уровень вовлечения представителей целевой аудитории является чётким
-                  доказательством
-                  простого факта</p>
+                  доказательством простого факта</p>
                 <a href="" class="block__link">Подробнее</a>
               </div>
 
-              <div class="swiper-slide developments__wrapper">
-                <div class="developments__slide developments__slide3"></div>
+              <div class="swiper-slide developments__wrapper block">
+                <div class="developments__slide">
+                  <picture>
+                    <source srcset="img/developments/320/developments_3.jpg" media="(max-width: 360px)">
+                    <source srcset="img/developments/768/developments_3.jpg" media="(max-width: 820px)">
+                    <source srcset="img/developments/1024/developments_3.jpg" media="(max-width: 1080px)">
+
+                    <img class="developments__img" src="img/developments/main/developments_3.jpg" alt="фото">
+                  </picture>
+                </div>
                 <p class="block__date">Еврейский музей<br>
                   с 31 марта по 21 апреля</p>
                 <p class="block__title">Выставка «Формация 2020»</p>
                 <p class="block__descr">Идейные соображения высшего порядка, а также современная методология разработки
-                  играет важную роль
-                  в формировании глубокомысленных рассуждений</p>
+                  играет важную роль в формировании глубокомысленных рассуждений</p>
                 <a href="" class="block__link">Подробнее</a>
               </div>
 
-              <div class="swiper-slide developments__wrapper">
-                <div class="developments__slide developments__slide4"></div>
+              <div class="swiper-slide developments__wrapper block">
+                <div class="developments__slide">
+                  <picture>
+                    <source srcset="img/developments/320/developments_4.jpg" media="(max-width: 360px)">
+                    <source srcset="img/developments/768/developments_4.jpg" media="(max-width: 820px)">
+                    <source srcset="img/developments/1024/developments_4.jpg" media="(max-width: 1080px)">
+
+                    <img class="developments__img" src="img/developments/main/developments_4.jpg" alt="фото">
+                  </picture>
+                </div>
                 <p class="block__date">ММАМ<br>
                   с 8 апреля по 20 мая</p>
                 <p class="block__title">Джон Винзор. Фотографии из серии «Метафора»</p>
                 <p class="block__descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной
-                  династии, которую
-                  продолжили его брат Давид и сын Ридольфо</p>
+                  династии, которую продолжили его брат Давид и сын Ридольфо</p>
                 <a href="" class="block__link">Подробнее</a>
               </div>
 
-              <div class="swiper-slide developments__wrapper">
-                <div class="developments__slide developments__slide5"></div>
+              <div class="swiper-slide developments__wrapper block">
+                <div class="developments__slide">
+                  <picture>
+                    <source srcset="img/developments/320/developments_5.jpg" media="(max-width: 360px)">
+                    <source srcset="img/developments/768/developments_5.jpg" media="(max-width: 820px)">
+                    <source srcset="img/developments/1024/developments_5.jpg" media="(max-width: 1080px)">
+
+                    <img class="developments__img" src="img/developments/main/developments_5.jpg" alt="фото">
+                  </picture>
+                </div>
                 <p class="block__date">Третьяковка на Крымском валу<br>
                   с 30 марта по 30 апреля</p>
                 <p class="block__title">XXIV Международная биеннале молодого искусства </p>
@@ -947,6 +1063,7 @@
 
             </div>
           </div>
+          <div class="swiper-pagination developments__pagination"></div>
         </div>
       </div>
     </section>
@@ -954,21 +1071,21 @@
       <div class="container">
         <div class="projects__wrap">
           <h2 class="title">Проекты</h2>
-          <p class="projects_descr">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
+          <p class="projects__descr">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
             деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые
             государства смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает
             их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей
             деятельности
 
-            <button class="btn-reset projects_btn js-tooltip-btn"
+            <button class="btn-reset projects__btn js-tooltip-btn"
               data-tippy-content="Пример современных тенденций — современная методология разработки"
               aria-label="Пояснительный текст">
-              <svg class="tooltip_svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              <svg class="tooltip-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="projects_path_1"
+                <path class="projects__path-1"
                   d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
                   stroke="none" />
-                <path class="projects_path_2"
+                <path class="projects__path-2"
                   d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
                   fill="none" />
               </svg>
@@ -977,15 +1094,15 @@
             однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
             И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
 
-            <button class="btn-reset projects_btn js-tooltip-btn"
+            <button class="btn-reset projects__btn js-tooltip-btn"
               data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
               aria-label="Пояснительный текст">
-              <svg class="tooltip_svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              <svg class="tooltip-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="projects_path_1"
+                <path class="projects__path-1"
                   d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
                   stroke="none" />
-                <path class="projects_path_2"
+                <path class="projects__path-2"
                   d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
                   fill="none" />
               </svg>
@@ -993,14 +1110,14 @@
 
             исключительно в разрезе маркетинговых и финансовых предпосылок.
 
-            <button class="btn-reset projects_btn js-tooltip-btn"
+            <button class="btn-reset projects__btn js-tooltip-btn"
               data-tippy-content="В стремлении повысить качество          " aria-label="Пояснительный текст">
-              <svg class="tooltip_svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              <svg class="tooltip-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="projects_path_1"
+                <path class="projects__path-1"
                   d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
                   stroke="none" />
-                <path class="projects_path_2"
+                <path class="projects__path-2"
                   d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
                   fill="none" />
               </svg>
@@ -1008,13 +1125,13 @@
 
             Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают
             нас к новым свершениям, которые, в свою очередь, должны быть
-            смешаны с не уникальными данными до степени совершённой неузнаваемости. Подробнее: <a class="projects_link"
+            смешаны с не уникальными данными до степени совершённой неузнаваемости. Подробнее: <a class="projects__link"
               href="#">blanchard-art.ru/projects</a>
           </p>
           <p class="projects__partners">Партнёры проектов:</p>
-          <div class="btn__wrap">
-            <button class="nav-btn btn_prev" aria-label="К предыдущему слайду"></button>
-            <button class="nav-btn btn_next" aria-label="К следующему слайду"></button>
+          <div class="btn-wrap">
+            <button class="nav-btn btn-prev" aria-label="К предыдущему слайду"></button>
+            <button class="nav-btn btn-next" aria-label="К следующему слайду"></button>
           </div>
           <div class="swiper projects__swiper">
 
@@ -1061,7 +1178,7 @@
               <h3>Шоурум №4</h3>
               <p>Леонтьевский переулок, дом 5/1</p>
             </div>
-            <form action="" class="contacts__form flex">
+            <form class="contacts__form flex validation">
               <label class="validation__label">
                 <input type="text" name="name" class="validation__input" placeholder="Имя*" data-validate-field="name">
               </label>
@@ -1069,13 +1186,14 @@
                 <input type="tel" name="tel" class="validation__input" placeholder="Телефон*" data-validate-field="tel"
                   data-validate-rules="phone">
               </label>
-              <button class="btn-reset validation__button">Заказать обратный звонок</button>
+              <button class="btn-reset validation__button"><span class="btn-non-320">Заказать обратный
+                  звонок</span><span class="btn-320">Заказать</span></button>
             </form>
-            <div class="contacts__social">
+            <div class="contacts__social social">
               <h3>Связаться в один клик</h3>
               <ul class="list-reset social__list flex">
                 <li>
-                  <a href="">
+                  <a href="" aria-label="Ватсап">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_191243_648)">
                         <path
@@ -1094,7 +1212,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="" aria-label="Телеграмм">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_191243_651)">
                         <path
@@ -1117,18 +1235,17 @@
           </div>
         </div>
       </div>
-      <div class="contacts__map" id="map"></div>
+
     </section>
+    <div class="map" id="map"></div>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__wrap flex">
-        <a href="#">
-          <img src="img/Logo.png" alt="Лого">
-        </a>
+        <img src="img/Logo.png" alt="Лого">
         <ul class="list-reset footer__social flex">
           <li>
-            <a href="">
+            <a href="" aria-label="ВКонтакте">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
@@ -1137,7 +1254,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" aria-label="Одноклассники">
               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"
