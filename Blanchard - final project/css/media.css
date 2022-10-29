@@ -1,4 +1,25 @@
-@media (max-width: 1800px) {
+@media (max-width: 1640px) {
+  .header__bottom .header__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .header__logo {
+    margin-right: 90px;
+  }
+
+}
+
+@media (max-width: 1440px) {
+  .header__logo {
+    margin-right: 40px;
+  }
+
+  .header__nav .nav__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
 
   /*header*/
 
@@ -69,7 +90,7 @@
   }
 
   .burger {
-    z-index: 1000;
+    z-index: 200;
     position: relative;
     display: block;
     width: 36px;
@@ -201,7 +222,7 @@
   }
 
   .test-slide {
-    min-height: 315px;
+    height: 315px;
   }
 
   .checkbox-container {
@@ -345,11 +366,6 @@
     transform: translateY(48px);
   }
 
-  .projects__wrapper img {
-    width: 61%;
-    height: 61%;
-  }
-
   .projects {
     margin-bottom: 83px;
   }
@@ -408,7 +424,7 @@
 }
 
 
-@media (max-width: 1040px) {
+@media (max-width: 1000px) {
 
   /*header*/
 
@@ -545,10 +561,6 @@
     margin-bottom: 80px;
   }
 
-  .validation__input {
-    width: 323px;
-  }
-
   .validation__label {
     margin-bottom: 15px;
     margin-right: 0;
@@ -565,6 +577,25 @@
 
   .footer__wrap {
     padding: 39px 50px;
+  }
+}
+
+@media (max-width: 960px) {
+  .top__search-box {
+    z-index: 300;
+    width: 100%;
+    justify-content: end;
+    right: 7%;
+  }
+
+  .search__input {
+    width: calc(100% - 180px);
+    height: 45px;
+    margin-right: 20px;
+  }
+
+  .validation__input {
+    width: 323px;
   }
 }
 
@@ -654,11 +685,23 @@
     font-size: 12px;
     line-height: 16px;
     padding: 12px 20px;
-    transform: translateX(23%);
+  }
+
+  .hero__btn-wrap {
+    text-align: center;
   }
 
   .hero {
     margin-bottom: 50px;
+  }
+
+  .search__input {
+    width: calc(100% - 110px);
+    height: 100%;
+  }
+
+  .top__search-box {
+    right: 3%;
   }
 
   /*about*/
@@ -835,12 +878,11 @@
   }
 
   .projects__swiper {
-    width: 67%;
+    width: 66%;
   }
 
   .projects__wrapper {
     height: 65px;
-    padding: 10px;
   }
 
   .projects .btn-next,
@@ -873,30 +915,7 @@
     margin-bottom: 20px;
   }
 
-  .validation__input {
-    width: 290px;
-    height: 40px;
-  }
 
-  .validation__button {
-    width: 128px;
-    height: 40px;
-    padding: 0;
-  }
-
-  .btn-320 {
-    display: inline-block;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .btn-non-320 {
-    display: none;
-  }
-
-  .validation__label {
-    margin-bottom: 20px;
-  }
 
   .contacts__social h3 {
     font-size: 18px;
@@ -963,6 +982,31 @@
     padding: 17px;
     max-width: 280px;
   }
+}
 
+@media (max-width: 440px) {
+  .validation__input {
+    width: 290px;
+    height: 40px;
+  }
 
+  .validation__button {
+    width: 128px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .btn-320 {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .btn-non-320 {
+    display: none;
+  }
+
+  .validation__label {
+    margin-bottom: 20px;
+  }
 }

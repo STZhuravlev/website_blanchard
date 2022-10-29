@@ -65,6 +65,7 @@ const swiper = new Swiper('.hero__swiper', {
   speed: 300,
 })
 
+
 /*select*/
 
 const element = document.querySelector('select');
@@ -110,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 38
       },
 
-      1180: {
+      1460: {
         slidesPerView: 3,
         slidesPerGroup: 3,
         spaceBetween: 35
@@ -235,7 +236,7 @@ const developments_swiper = new Swiper('.developments__swiper', {
       }
     },
 
-    800: {
+    980: {
       slidesPerView: 3,
       slidesPerGroup: 2,
       spaceBetween: 28,
