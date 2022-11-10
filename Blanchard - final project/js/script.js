@@ -225,7 +225,7 @@ const developments_swiper = new Swiper('.developments__swiper', {
       }
     },
 
-    660: {
+    541: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
@@ -236,7 +236,7 @@ const developments_swiper = new Swiper('.developments__swiper', {
       }
     },
 
-    980: {
+    841: {
       slidesPerView: 3,
       slidesPerGroup: 2,
       spaceBetween: 28,
@@ -423,12 +423,14 @@ cancelBtn.onclick = () => {
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.top__blog');
 let menuLinks = menu.querySelectorAll('.nav__link');
+let Btnsearch = document.querySelector('.top__search');
 
 
 burger.addEventListener('click',
   function () {
     burger.classList.toggle('burger--active');
     menu.classList.toggle('top__blog--active');
+    Btnsearch.classList.toggle('top__search--active');
     document.body.classList.toggle('stop-scroll');
   })
 
@@ -437,6 +439,8 @@ menuLinks.forEach(function (el) {
     burger.classList.remove('burger--active')
 
     menu.classList.remove('top__blog--active')
+
+    Btnsearch.classList.remove('top__search--active')
 
     document.body.classList.remove('stop-scroll')
   })
