@@ -225,7 +225,7 @@ const developments_swiper = new Swiper('.developments__swiper', {
       }
     },
 
-    541: {
+    591: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
